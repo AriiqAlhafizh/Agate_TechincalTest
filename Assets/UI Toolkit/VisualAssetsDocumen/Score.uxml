@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS/GameplayScene.uss?fileID=7433441132597879392&amp;guid=fe9d850b2c2671e4aab00822e6dea679&amp;type=3#GameplayScene" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="ScoreContainer" style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: center; align-self: auto; align-content: auto; top: 0; right: 0; position: absolute; width: 20%; height: 20%; margin-top: 10px; margin-right: 5%; margin-bottom: 10px; margin-left: 10px;">
+            <ui:Label text="Score :" enable-rich-text="false" class="scoreLabel" style="background-color: rgba(255, 0, 0, 0); font-size: 40%; -unity-text-align: middle-center; word-spacing: 0; letter-spacing: 0; -unity-font-style: bold; white-space: pre-wrap;" />
+            <ui:Label text="999" name="Score" class="scoreLabel" style="background-color: rgba(0, 3, 255, 0); font-size: 45%; -unity-font-style: bold; -unity-text-align: middle-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
