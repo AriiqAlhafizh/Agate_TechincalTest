@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -69,6 +68,8 @@ public class MainMenuiUiController : MonoBehaviour
         mainMenuDocument.rootVisualElement.style.display = DisplayStyle.Flex;
         levelSelectionDocument.rootVisualElement.style.display = DisplayStyle.None;
         aboutDocument.rootVisualElement.style.display = DisplayStyle.None;
+
+        GameplayUIController.Instance.disableUI();
     }
     private void ShowAbout()
     {

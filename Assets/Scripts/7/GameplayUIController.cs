@@ -31,12 +31,12 @@ public class GameplayUIController : MonoBehaviour
 
     void Start()
     {
-        if (isGameplay) { 
-            ScoreLabel = scoreDocument.rootVisualElement.Q<Label>("Score");
-            ScoreLabel.text = "0";
-        };
+        ScoreLabel = scoreDocument.rootVisualElement.Q<Label>("Score");
+        ScoreLabel.text = "0";
+        if (!isGameplay) { 
+            scoreDocument.rootVisualElement.style.display = DisplayStyle.None;
+        }
 
-        pauseDocument.enabled = true;
         resumeBtn = pauseDocument.rootVisualElement.Q<Button>("Resume");
         restartBtn = pauseDocument.rootVisualElement.Q<Button>("Restart");
         mainMenuBtn = pauseDocument.rootVisualElement.Q<Button>("MainMenu");
@@ -98,5 +98,11 @@ public class GameplayUIController : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
+    }
+
+    public void disableUI()
+    {
+        scoreDocument.rootVisualElement.style.display = DisplayStyle.None;
+        pauseDocument.rootVisualElement.style.display = DisplayStyle.None;
     }
 }
