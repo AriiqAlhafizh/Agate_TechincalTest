@@ -1,0 +1,18 @@
+:root {
+}
+
+.defaultLayout {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.defaultButton {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 30%;
+    height: 10%;
+    font-size: 50px;
+}

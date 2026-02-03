@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS/MenuLayout.uss?fileID=7433441132597879392&amp;guid=f569b368311572d40a2e906b438ddc8a&amp;type=3#MenuLayout" />
+    <ui:VisualElement class="defaultLayout" style="flex-grow: 1; background-color: rgb(0, 0, 0);">
+        <ui:Button text="Resume" name="Resume" class="defaultButton" />
+        <ui:Button text="Restart" name="Restart" class="defaultButton" />
+        <ui:Button text="Back to Main Menu" name="MainMenu" class="defaultButton" />
+    </ui:VisualElement>
+</ui:UXML>

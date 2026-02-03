@@ -10,6 +10,8 @@ public class InputReader : ScriptableObject, InputSystem_Actions.IPlayerActions
     public Action<Vector2> moveEvent;
     public Action<Vector2> lookEvent;
 
+    public Action pauseEvent;
+
     void OnEnable()
     {
         if (gameInput == null)
@@ -20,13 +22,22 @@ public class InputReader : ScriptableObject, InputSystem_Actions.IPlayerActions
         setPlayer();
     }
 
-    void setPlayer()
+    void setUI()
+    {
+        gameInput.Player.Disable();
+        gameInput.UI.Enable();
+    }
+
+    public void setPlayer()
     {
         gameInput.Player.Enable();
+        gameInput.UI.Disable();
     }
 
     void OnDisable()
     {
+        gameInput.Player.Disable();
+        gameInput.UI.Disable();
         gameInput.Dispose();
     }
 
@@ -50,6 +61,6 @@ public class InputReader : ScriptableObject, InputSystem_Actions.IPlayerActions
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        pauseEvent?.Invoke();
     }
 }

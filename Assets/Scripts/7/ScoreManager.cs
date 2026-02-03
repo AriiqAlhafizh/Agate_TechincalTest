@@ -24,6 +24,6 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int score)
     {
         CurrentScore += score;
-        UIScoreController.Instance.UpdateScore(CurrentScore);
+        GameplayUIController.Instance.UpdateScore(CurrentScore);
     }
 }

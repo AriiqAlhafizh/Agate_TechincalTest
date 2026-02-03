@@ -34,7 +34,7 @@ public class SquareObjectPool : MonoBehaviour
     }
     void Start()
     {
-        int randomValue = Random.RandomRange(1, 10);
+        int randomValue = Random.Range(1, 11);
         for (int i = 0; i < randomValue; i++)
         {
             Vector2 randomPoint = GetRandomSafePosition();
