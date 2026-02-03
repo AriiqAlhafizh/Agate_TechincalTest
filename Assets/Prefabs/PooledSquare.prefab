@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8698412089217641092}
   - component: {fileID: 3706888309524200822}
   - component: {fileID: -9082176955615756262}
-  - component: {fileID: -8268106902614376536}
+  - component: {fileID: -722371227190340739}
   - component: {fileID: 4783214679952545244}
-  m_Layer: 0
-  m_Name: ScoreSquare
+  m_Layer: 8
+  m_Name: PooledSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::getScore
   circleScoreSO: {fileID: 11400000, guid: ec2daaa832b7e2a41914c32789b6783c, type: 2}
---- !u!114 &-8268106902614376536
+--- !u!114 &-722371227190340739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,9 +115,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3593772068618615126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad24e714e254b904cb5fb4e333a3e499, type: 3}
+  m_Script: {fileID: 11500000, guid: 6112b2c80a4c652439487ecf62f9722f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DestroyonCollision
+  m_EditorClassIdentifier: Assembly-CSharp::DisableonCollision
 --- !u!61 &4783214679952545244
 BoxCollider2D:
   m_ObjectHideFlags: 0

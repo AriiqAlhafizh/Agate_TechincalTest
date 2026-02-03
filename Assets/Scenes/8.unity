@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 64077293}
   - component: {fileID: 64077292}
   - component: {fileID: 64077291}
+  - component: {fileID: 64077294}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -211,6 +212,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &64077294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64077290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &242643141
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +301,7 @@ GameObject:
   - component: {fileID: 1245104807}
   - component: {fileID: 1245104811}
   - component: {fileID: 1245104810}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lingkaran
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -490,7 +535,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594050086}
-  - component: {fileID: 1594050085}
   - component: {fileID: 1594050087}
   m_Layer: 0
   m_Name: GameManager
@@ -499,20 +543,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1594050085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594050084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2437ad85d6b7b44b2b92af8aa3222f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InstantiateRandomSquare
-  environment: {fileID: 4611450533285245975, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
-  squarePrefab: {fileID: 3593772068618615126, guid: c3783e130869d1b408839b3ff46ffca8, type: 3}
 --- !u!4 &1594050086
 Transform:
   m_ObjectHideFlags: 0
@@ -525,7 +555,8 @@ Transform:
   m_LocalPosition: {x: 1.71001, y: 0.61432, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2019033433}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1594050087
@@ -625,6 +656,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2019033432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019033433}
+  - component: {fileID: 2019033434}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019033433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019033432}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1594050086}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019033434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019033432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f9e485e023b3b64b84bf41c9fedbe71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SquareObjectPool
+  environment: {fileID: 4611450533285245975, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
+  squarePrefab: {fileID: 3593772068618615126, guid: ae6ca2ed76dc17141a0388ccd47482e3, type: 3}
+  forbiddenLayer:
+    serializedVersion: 2
+    m_Bits: 192
 --- !u!1001 &4681677061036435754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -633,9 +713,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2997593535381399253, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4611450533285245975, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
       propertyPath: m_Name
       value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4611450533285245975, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726125496318909537, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5455167439153582223, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5944300588333507640, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -676,6 +772,10 @@ PrefabInstance:
     - target: {fileID: 5944300588333507640, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688037124970524635, guid: 1bc420fd61fcda8479d1966216c833cd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
