@@ -16,3 +16,29 @@
     height: 10%;
     font-size: 50px;
 }
+
+.levelButton {
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.about {
+    width: auto;
+    height: 10%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}

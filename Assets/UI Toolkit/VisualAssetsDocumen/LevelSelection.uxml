@@ -1,0 +1,16 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS/MenuLayout.uss?fileID=7433441132597879392&amp;guid=f569b368311572d40a2e906b438ddc8a&amp;type=3#MenuLayout" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-around; flex-wrap: wrap-reverse; width: 100%; height: 100%; align-content: center;">
+            <ui:Button text="8" name="8" class="levelButton" />
+            <ui:Button text="7" name="7" class="levelButton" />
+            <ui:Button text="6" name="6" class="levelButton" />
+            <ui:Button text="5" name="5" class="levelButton" />
+            <ui:Button text="1" name="1" class="levelButton" />
+            <ui:Button text="2" name="2" class="levelButton" />
+            <ui:Button text="3" name="3" class="levelButton" />
+            <ui:Button text="4" name="4" class="levelButton" />
+        </ui:VisualElement>
+        <ui:Button text="Back" name="Back" class="defaultButton" style="width: 20%; height: 8%; bottom: 0; left: 0; position: absolute; margin-bottom: 3%; margin-left: 3%;" />
+    </ui:VisualElement>
+</ui:UXML>

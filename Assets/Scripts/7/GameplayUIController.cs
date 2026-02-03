@@ -6,6 +6,8 @@ public class GameplayUIController : MonoBehaviour
 {
     public static GameplayUIController Instance { get; private set; }
 
+    public bool isGameplay = true;
+
     public UIDocument scoreDocument;
     public UIDocument pauseDocument;
 
@@ -29,8 +31,10 @@ public class GameplayUIController : MonoBehaviour
 
     void Start()
     {
-        ScoreLabel = scoreDocument.rootVisualElement.Q<Label>("Score");
-        ScoreLabel.text = "0";
+        if (isGameplay) { 
+            ScoreLabel = scoreDocument.rootVisualElement.Q<Label>("Score");
+            ScoreLabel.text = "0";
+        };
 
         pauseDocument.enabled = true;
         resumeBtn = pauseDocument.rootVisualElement.Q<Button>("Resume");

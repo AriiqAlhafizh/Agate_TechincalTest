@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS/MenuLayout.uss?fileID=7433441132597879392&amp;guid=f569b368311572d40a2e906b438ddc8a&amp;type=3#MenuLayout" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px;">
+        <ui:Label text="Nama: Muhammad Ariiq Alhafizh Agung" name="Label" class="about" style="background-color: rgba(255, 0, 0, 0);" />
+        <ui:Label text="Kategori Partisipasi: Umum" name="Label" class="about" style="background-color: rgba(55, 255, 0, 0);" />
+        <ui:Label name="Label" text="Link Github: https://github.com/AriiqAlhafizh/Agate_TechincalTest" class="about" style="background-color: rgba(255, 148, 0, 0);" />
+        <ui:Label text="Asset Created by me" name="Label" class="about" style="background-color: rgba(255, 0, 247, 0);" />
+    </ui:VisualElement>
+    <ui:Button text="Back" name="Back" class="defaultButton" style="width: 20%; height: 8%; bottom: 0; left: 0; position: absolute; margin-bottom: 3%; margin-left: 3%;" />
+</ui:UXML>

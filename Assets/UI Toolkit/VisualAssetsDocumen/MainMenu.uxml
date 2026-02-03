@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS/MenuLayout.uss?fileID=7433441132597879392&amp;guid=f569b368311572d40a2e906b438ddc8a&amp;type=3#MenuLayout" />
+    <ui:VisualElement class="defaultLayout" style="flex-grow: 1;">
+        <ui:Label text="Agate Technical Test" class="defaultButton" style="-unity-text-align: upper-center; font-size: 100px; margin-bottom: 5%;" />
+        <ui:Button text="Play" name="Play" class="defaultButton" />
+        <ui:Button text="About" name="About" class="defaultButton" />
+        <ui:Button text="Quit" name="Quit" class="defaultButton" />
+    </ui:VisualElement>
+</ui:UXML>
